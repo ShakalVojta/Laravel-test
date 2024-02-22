@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AwardControllor;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MovieController;
@@ -28,3 +29,4 @@ Route::get('/', function () {
 // Route::get('/movies', [App\Http\Controllers\IndexController::class, 'index']);
 Route::get('/movie', ['App\Http\Controllers\MovieController', 'index']);
 Route::get('/game', ['App\Http\Controllers\MovieController', 'games']);
+Route::get('/about-us', [AboutController::class, 'aboutUS']);
